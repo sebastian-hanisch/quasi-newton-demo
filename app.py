@@ -115,7 +115,7 @@ st.markdown(
     "Vektorpaare — Speicherbedarf $O(mn)$ statt $O(n^2)$."
 )
 st.caption(
-    "Stück 3 der 'Nichtlineare Optimierung'-Reihe. Geplante Folgestücke (noch nicht gebaut): "
+    "Stück 3 der 'Nichtlineare Optimierung'-Reihe. Folgestücke (alle gebaut): "
     "Lagrange/KKT, Straf-/Barriere-Verfahren, SQP, Innere-Punkte-Verfahren, Stochastische "
     "Gradientenverfahren."
 )
@@ -303,7 +303,7 @@ Quadratik), ist der erste Schritt algebraisch identisch zu Newtons Schritt aus S
 
 st.markdown("---")
 st.caption(
-    "Diese Demo ist Teil des Portfolios von [Sebastian Hanisch](https://sebastianhanisch.net) "
-    "– Operations Research und Machine Learning. Interesse an einer maßgeschneiderten Lösung "
-    "für Ihr Unternehmen? [Kontakt aufnehmen](https://sebastianhanisch.net/kontakt.html)"
+    "Diese Demo ist Teil des Portfolios von [Sebastian Hanisch](https://sebastianhanisch.net) – "
+    "Operations Research und Machine Learning ([Über mich](https://sebastianhanisch.net/ueber-mich.html)). "
+    "Mehr zur Reihe: [Nichtlineare Optimierung: acht Stücke, zwei Äste](https://sebastianhanisch.net/konzepte-nichtlineare-optimierung.html)."
 )

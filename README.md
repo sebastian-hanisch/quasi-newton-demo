@@ -15,11 +15,11 @@ Approximation, nur die letzten $m$ Vektorpaare – Speicherbedarf $O(mn)$ statt 
 Gradientenabstieg (WURZEL)                       [gebaut]
  └─ Newton-Verfahren                             [gebaut]
       └─ Quasi-Newton (BFGS/L-BFGS)               [DIESES STÜCK]
-           └─ Lagrange-Multiplikatoren/KKT        [nicht gebaut]
-                ├─ Straf-/Barriere-Verfahren      [nicht gebaut]
-                └─ SQP                            [nicht gebaut]
-                     └─ Innere-Punkte-Verfahren   [nicht gebaut]
- └─ Stochastische Gradientenverfahren             [nicht gebaut, letztes Stück]
+           └─ Lagrange-Multiplikatoren/KKT        [gebaut]
+                ├─ Straf-/Barriere-Verfahren      [gebaut]
+                └─ SQP                            [gebaut]
+                     └─ Innere-Punkte-Verfahren   [gebaut]
+ └─ Stochastische Gradientenverfahren             [gebaut, letztes Stück]
 ```
 
 **Ergebnis in Kürze:** Startet BFGS mit der exakten inversen Hesse-Matrix, reproduziert es Newtons
@@ -176,3 +176,7 @@ streamlit run app.py
 - Liu, D. C. & Nocedal, J. (1989). *On the limited memory BFGS method for large scale
   optimization.* Mathematical Programming, 45, 503–528.
 - Nocedal, J. & Wright, S. J. (2006). *Numerical Optimization* (2. Aufl.). Springer.
+
+---
+
+Diese Demo ist Teil des Portfolios von [Sebastian Hanisch](https://sebastianhanisch.net) – Operations Research und Machine Learning ([Über mich](https://sebastianhanisch.net/ueber-mich.html)). Mehr zur Reihe: [Nichtlineare Optimierung: acht Stücke, zwei Äste](https://sebastianhanisch.net/konzepte-nichtlineare-optimierung.html).
