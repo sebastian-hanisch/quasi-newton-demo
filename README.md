@@ -131,13 +131,16 @@ für die hier gezeigten Effekte, aber nicht production-grade. Nur unrestringiert
 
 ## Tests
 
-32 Tests, `python -m pytest tests/ -v` (Laufzeit lokal ~2 Sekunden):
+38 Tests, `python -m pytest tests/ -v` (Laufzeit lokal ~2 Sekunden):
 - `test_functions.py` – Testfunktionen, Gradienten gegen finite Differenzen.
 - `test_optimizer.py` – Reduktion auf Newton, endliche Terminierung, BFGS/L-BFGS auf Rosenbrock.
 - `test_evaluation.py` – Sweep-Funktionen mit billigen Parametern.
 - `test_claims.py` – jede Zahl oben nachgerechnet, mit Toleranzband (Modul-Fixtures für die
   teureren Sweeps).
 - `test_presets.py`, `test_app.py` – Presets, Funktions-/Verfahrenswechsel, Footer.
+- `test_oracle_quasi_newton.py` – unabhängige Orakel: ausgeschriebenes BFGS-Lehrbuch-Update, explizite
+  L-BFGS-Matrix statt Zwei-Schleifen-Rekursion, lineares CG (BFGS mit exakter Liniensuche ≡ CG),
+  `scipy.optimize.minimize` auf Rosenbrock, Eigenzerlegung für die Gradientenabstieg-Schrittzahl.
 
 ## Dateistruktur
 
